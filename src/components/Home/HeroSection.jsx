@@ -43,7 +43,7 @@ const HeroSection = () => {
           <span className="ml-2 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
         </a>
   
-        {/* Video Placeholder */}
+        {/* Video Embedded */}
         <LaptopFrame/>
       </section>
     );
