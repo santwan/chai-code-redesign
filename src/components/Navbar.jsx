@@ -11,6 +11,10 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
+  
+  // Added this section for showing the live glow
+  const liveSections = ["Cohorts", "Docs"];
+  const navItems = ["Cohorts", "Udemy", "Docs", "Reviews"];
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -63,10 +67,14 @@ const Navbar = () => {
               scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >
-            <a href="#">Cohorts</a>
-            <a href="#">Udemy</a>
-            <a href="#">Docs</a>
-            <a href="#">Reviews</a>
+              {navItems.map((item) => (
+                <a key={item} href="#" className="flex items-center">
+                  {item}
+                  {liveSections.includes(item) && (
+                    <span className="ml-1 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
+                  )}
+                </a>
+              ))}
           </div>
 
           {/* Desktop Right Section */}
@@ -108,10 +116,19 @@ const Navbar = () => {
             >
               <ThemeToggle />
               <a href="#" onClick={() => setMenuOpen(false)}>Login</a>
-              <a href="#" onClick={() => setMenuOpen(false)}>Cohorts</a>
-              <a href="#" onClick={() => setMenuOpen(false)}>Udemy</a>
-              <a href="#" onClick={() => setMenuOpen(false)}>Docs</a>
-              <a href="#" onClick={() => setMenuOpen(false)}>Reviews</a>
+              {navItems.map((item) => (
+              <a
+                key={item}
+                href="#"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center"
+              >
+                {item}
+                {liveSections.includes(item) && (
+                  <span className="ml-2 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
+                )}
+              </a>
+            ))}
             </motion.div>
           )}
         </AnimatePresence>
@@ -128,10 +145,19 @@ const Navbar = () => {
               flex flex-row items-center justify-center space-x-6 text-black dark:text-white text-sm font-medium 
               whitespace-nowrap overflow-x-auto w-auto max-w-[90vw] sm:max-w-fit"
           >
-            <a href="#">Cohorts</a>
-            <a href="#">Udemy</a>
-            <a href="#">Docs</a>
-            <a href="#">Reviews</a>
+            {navItems.map((item) => (
+              <a
+                key={item}
+                href="#"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center"
+              >
+                {item}
+                {liveSections.includes(item) && (
+                  <span className="ml-2 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
+                )}
+              </a>
+            ))}
           </motion.div>
         )}
       </AnimatePresence>
