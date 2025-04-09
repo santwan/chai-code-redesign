@@ -16,6 +16,13 @@ const Navbar = () => {
   const liveSections = ["Cohorts", "Docs"];
   const navItems = ["Cohorts", "Udemy", "Docs", "Reviews"];
 
+  const navConfig = [
+    { label: "Cohorts", href: "#", isLive: true },
+    { label: "Udemy", href: "#", isLive: false },
+    { label: "Docs", href: "#", isLive: false },
+    { label: "Reviews", href: "#", isLive: true },
+  ]
+
   useEffect(() => {
     const root = window.document.documentElement;
     setIsDark(root.classList.contains('dark'));
@@ -67,10 +74,10 @@ const Navbar = () => {
               scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >
-              {navItems.map((item) => (
-                <a key={item} href="#" className="flex items-center">
-                  {item}
-                  {liveSections.includes(item) && (
+              {navConfig.map(({ label , href, isLive }) => (
+                <a key={label} href={href} className="flex items-center">
+                  {label}
+                  {isLive && (
                     <span className="ml-1 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
                   )}
                 </a>
@@ -116,15 +123,15 @@ const Navbar = () => {
             >
               <ThemeToggle />
               <a href="#" onClick={() => setMenuOpen(false)}>Login</a>
-              {navItems.map((item) => (
+              {navConfig.map(({label, href, isLive}) => (
               <a
-                key={item}
-                href="#"
+                key={label}
+                href={href}
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center"
               >
-                {item}
-                {liveSections.includes(item) && (
+                {label}
+                {isLive && (
                   <span className="ml-2 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
                 )}
               </a>
@@ -145,15 +152,15 @@ const Navbar = () => {
               flex flex-row items-center justify-center space-x-6 text-black dark:text-white text-sm font-medium 
               whitespace-nowrap overflow-x-auto w-auto max-w-[90vw] sm:max-w-fit"
           >
-            {navItems.map((item) => (
+            {navConfig.map(({label, href,isLive}) => (
               <a
-                key={item}
-                href="#"
+                key={label}
+                href={href}
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center"
               >
-                {item}
-                {liveSections.includes(item) && (
+                {label}
+                {isLive && (
                   <span className="ml-2 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
                 )}
               </a>
