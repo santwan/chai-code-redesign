@@ -75,11 +75,16 @@ const Navbar = () => {
             }`}
           >
               {navConfig.map(({ label , href, isLive }) => (
-                <a key={label} href={href} className="flex items-center">
-                  {label}
+                <a key={label} href={href} className="relative flex items-center px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_15px_4px_rgba(255,115,0,0.6)]">
+                  <span className="relative z-10">
+                    {label}
+                  </span>
                   {isLive && (
                     <span className="ml-1 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
                   )}
+                    {/* <span
+                      className="absolute -bottom-1 left-0 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"
+                    /> */}
                 </a>
               ))}
           </div>
