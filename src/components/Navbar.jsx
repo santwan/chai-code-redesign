@@ -2,10 +2,30 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import logoDark from '../assets/chaicode-black.svg';
+import logoWhite from '../assets/chaicode-white.svg';
+
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+    setIsDark(root.classList.contains('dark'));
+
+    const observer = new MutationObserver(() => {
+      setIsDark(root.classList.contains('dark'));
+    });
+
+    observer.observe(root, { attributes: true, attributeFilter: ['class'] });
+
+    return () => observer.disconnect();
+  }, []);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +50,11 @@ const Navbar = () => {
               scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >
-            <h1 className="text-black dark:text-white text-xl font-bold">ChaiCode</h1>
+            <img
+              src={isDark ? logoWhite : logoDark }
+              alt="Logo"
+              className="h-8"
+            />
           </div>
 
           {/* Center Nav - Hidden on scroll */}
