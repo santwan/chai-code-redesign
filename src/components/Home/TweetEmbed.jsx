@@ -2,9 +2,15 @@ import { useEffect, useRef, useState } from "react";
 
 const TweetEmbed = () => {
   const containerRef = useRef(null);
-  const [theme, setTheme] = useState(
-    document.documentElement.classList.contains("dark") ? "dark" : "light"
-  );
+  const [theme, setTheme] = useState(null) // Instead of Hardcoding light or dark
+  const [ready, setReady] = useState(false) // ensures we wait for the theme to load 
+  // this prevents rendering the Twitter embed until the correct theme is detected
+
+//   const [theme, setTheme] = useState(
+//     document.documentElement.classList.contains("dark") ? "dark" : "light"
+//   );
+
+
 
   // Load the Twitter script
   const loadTwitterWidget = () => {
@@ -19,26 +25,35 @@ const TweetEmbed = () => {
   };
 
   useEffect(() => {
-    loadTwitterWidget();
+    const detectTheme = () => {
+        const isDark = document.documentElement.classList.contain("dark")
+        setTheme(isDark ? "dark": "light")
+        setReady(true)
+    }
 
-    // Observe for class changes on <html>
-    const observer = new MutationObserver(() => {
-      const isDark = document.documentElement.classList.contains("dark");
-      setTheme(isDark ? "dark" : "light");
-    });
+    //Initial detection (delat to ensures Tailwind applies class)
+    //tailwind applies the dark class dynamically , A small delay ensures we read the actual class from >html>
+    setTimeout(detectTheme, 50)
 
+    // Observe for class changes on (toggle)
+    // This listens for class changes on <html> so the Twitter theme updates dynamically when toggled.
+    const observer = new MutationObserver(detectTheme)
     observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
+        attributes: true,
+        attributeFilter: ["class"],
+    })
 
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    // Re-render on theme change
-    loadTwitterWidget();
-  }, [theme]);
+    //This if condition Prevents the embed from rendering until the correct theme is determined.
+    if(ready) {  
+        loadTwitterWidget()
+    }
+  }, [theme, ready]);
+
+  if(!ready) return null; // Don’t render anything until theme is known
 
   return (
     <div ref={containerRef} key={theme}>
