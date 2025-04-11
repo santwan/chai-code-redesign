@@ -58,6 +58,13 @@
 import React from "react";
 import TweetEmbed from "./TweetEmbed"; // Adjust path if needed
 
+const tweets = [
+  "1907673685479018737",
+  "1907673685479018737",
+  "1910196260746723481",
+]
+
+
 const TweetSection = () => {
   return (
     <section className="w-full flex flex-col items-center py-16 px-4 bg-white dark:bg-[#09090B]">
@@ -65,7 +72,9 @@ const TweetSection = () => {
         ❤️ What People Are Saying
       </h2>
       <div className="max-w-xl w-full flex justify-center">
-        <TweetEmbed />
+        {tweets.map( (id) => {
+          return <TweetEmbed key={id} tweetId={id}/>
+        })}
       </div>
     </section>
   );

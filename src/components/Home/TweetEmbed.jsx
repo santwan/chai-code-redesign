@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const TweetEmbed = () => {
+const TweetEmbed = ({tweetId}) => {
   const containerRef = useRef(null);
   const [theme, setTheme] = useState(null) // Instead of Hardcoding light or dark
   const [ready, setReady] = useState(false) // ensures we wait for the theme to load 
@@ -56,25 +56,13 @@ const TweetEmbed = () => {
   if(!ready) return null; // Don’t render anything until theme is known
 
   return (
-    <div ref={containerRef} key={theme}>
-      <blockquote
-        className="twitter-tweet"
-        data-theme={theme}
-      >
-        <p lang="en" dir="ltr">
-          Coding is fun and we enjoy every part of it.
-          <br />
-          <br />
-          We have some of the best cohort (live training) available at chaicode
-          platform. We are about to start with classes. Aur sab kuch Hindi me h
-          to easily smjh b aa jaata h.{" "}
-          <a href="https://t.co/CEJzmWVNPj">pic.twitter.com/CEJzmWVNPj</a>
-        </p>
-        &mdash; Hitesh Choudhary (@Hiteshdotcom){" "}
-        <a href="https://twitter.com/Hiteshdotcom/status/1907673685479018737">
-          April 3, 2025
-        </a>
-      </blockquote>
+    <div ref={containerRef} key={`${tweetId}-${theme}`}>
+        <blockquote
+            className="twitter-tweet"
+            data-theme={theme}
+        >
+            <a href={`https://twitter.com/i/status/${tweetId}`}></a>
+        </blockquote>
     </div>
   );
 };
