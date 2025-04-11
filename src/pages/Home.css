@@ -2,9 +2,9 @@
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-  }
+}
   
-  .glow-border {
+.glow-border-rainbow {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,14 +17,14 @@
     z-index: 0;
     filter: blur(2px);
     opacity: 0.6;
-  }
+}
   
-  @keyframes spin {
+@keyframes spin {
     from {
       --angle: 0deg;
     }
     to {
       --angle: 360deg;
     }
-  }
+}
   
