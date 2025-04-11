@@ -26,7 +26,7 @@ const TweetEmbed = () => {
 
   useEffect(() => {
     const detectTheme = () => {
-        const isDark = document.documentElement.classList.contain("dark")
+        const isDark = document.documentElement.classList.contains("dark")
         setTheme(isDark ? "dark": "light")
         setReady(true)
     }
