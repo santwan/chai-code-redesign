@@ -8,7 +8,7 @@ const HeroSection = () => {
         {/* Trust Badge */}
         <div className="relative flex items-center justify-center m-4 px-1 py-1">
             {/* Glow Border */}
-            <div className="absolute inset-0 glow-border rounded-full "></div>
+            <div className="absolute inset-0 glow-border-rainbow rounded-full "></div>
 
             {/* Content */}
             <div className=" dark:border-white rounded-full text-sm font-medium text-gray-800 dark:text-gray-300 bg-white dark:bg-black 
