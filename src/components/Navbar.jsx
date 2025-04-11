@@ -13,8 +13,8 @@ const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
   
   // Added this section for showing the live glow
-  const liveSections = ["Cohorts", "Docs"];
-  const navItems = ["Cohorts", "Udemy", "Docs", "Reviews"];
+  // const liveSections = ["Cohorts", "Docs"];
+  // const navItems = ["Cohorts", "Udemy", "Docs", "Reviews"];
 
   const navConfig = [
     { label: "Cohorts", href: "#", isLive: true },
