@@ -22,7 +22,7 @@ const ThemeToggle = () => {
       onClick={() => setIsDark(!isDark)}
       className="text-yellow-500 dark:text-yellow-400 p-2 rounded-full bg-white/10 hover:bg-white/20 dark:hover:bg-yellow-400/40 transition"
     >
-      {isDark ? <Moon size={20} /> : <Sun size={20} /> }
+      {isDark ? <Moon size={30} /> : <Sun size={30} /> }
     </button>
   );
 };
