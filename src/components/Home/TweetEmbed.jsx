@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 import { useEffect, useRef, useState } from "react";
 
 const TweetEmbed = ({tweetId}) => {
@@ -9,8 +10,6 @@ const TweetEmbed = ({tweetId}) => {
 //   const [theme, setTheme] = useState(
 //     document.documentElement.classList.contains("dark") ? "dark" : "light"
 //   );
-
-
 
   // Load the Twitter script
   const loadTwitterWidget = () => {
@@ -56,15 +55,36 @@ const TweetEmbed = ({tweetId}) => {
   if(!ready) return null; // Don’t render anything until theme is known
 
   return (
-    <div ref={containerRef} key={`${tweetId}-${theme}`}>
-        <blockquote
-            className="twitter-tweet"
-            data-theme={theme}
+    <div
+
+        className="dark:bg-orange-500/40 border-[1px] pl-1 pr-1 dark:border-orange-400/60 shadow-[0_0_200px_rgba(251,146,60,0.5)]  rounded-xl  h-[400px]  overflow-hidden"
+    >
+        <div 
+            ref={containerRef} key={`${tweetId}-${theme}`}
+            style={{ }}
         >
-            <a href={`https://twitter.com/i/status/${tweetId}`}></a>
-        </blockquote>
+            <blockquote
+                className="twitter-tweet"
+                data-theme={theme}
+                data-conversation="none"
+            >
+                <a href={`https://twitter.com/i/status/${tweetId}`}></a>
+            </blockquote>
+        </div>
     </div>
   );
 };
 
 export default TweetEmbed;
+
+
+
+
+        // style={{
+        //     height: "400px",
+        //     overflow: "hidden",
+        //     borderRadius: "16px",
+        //     border: "1px solid",
+        //     padding: "0.5rem",
+        //     boxShadow: "0 0 12px rgba(0,0,0,0.4)",
+        // }} 
