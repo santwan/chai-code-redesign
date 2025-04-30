@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "./TestimonialCard.jsx";
 import testimonials from "../../../data/testimonials.json";
 
 export default function TestimonialSection() {
