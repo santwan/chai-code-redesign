@@ -1,10 +1,8 @@
-import { useState } from 'react';
-import './index.css'
-import Home from './pages/Home';
-import Navbar from './components/Navbar';
-import ThemeToggle from './components/ThemeToggle';
-
-
+import { useState } from "react";
+import "./index.css";
+import Home from "./pages/Home";
+import Navbar from "./components/Global/Navbar";
+import ThemeToggle from "./components/Global/ThemeToggle";
 
 function App() {
   return (
@@ -15,4 +13,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
