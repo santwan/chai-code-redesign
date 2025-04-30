@@ -77,11 +77,11 @@ const CohortBenefits = () => {
         variants={fadeUp}
         className="max-w-7xl mx-auto text-center mb-10"
       >
-        <h2 className="text-4xl font-bold mb-2 text-orange-500 dark:text-orange-400">
+        <h2 className="text-4xl md:text-5xl font-bold mb-2 ">
           Key Benefits of Cohorts
         </h2>
-        <p className="text-gray-700 dark:text-gray-400 text-sm max-w-2xl mx-auto">
-          Cohorts are the best way to learn — you complete the course on time, with a community beside you.
+        <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
+        "Cohorts are the best way to learn — they keep you accountable, help you finish on time, and surround you with a community that grows with you."
         </p>
       </motion.div>
 
