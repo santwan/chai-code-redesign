@@ -28,7 +28,7 @@ export default function TestimonialSection() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-orange-700 via-orange-500 to-orange-500 drop-shadow-[0_2px_15px_rgba(255,161,0,0.5)]">
+        <h2 className="text-4xl sm:text-5xl font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-b dark:from-orange-700 dark:via-orange-500 dark:to-orange-500 dark:drop-shadow-[0_2px_15px_rgba(255,161,0,0.5)]">
           Our Students' Feedback
         </h2>
 
@@ -78,7 +78,7 @@ export default function TestimonialSection() {
 
         {/* CTA Button */}
         <div className="pt-10">
-          <button className="px-6 py-3 font-semibold text-xl rounded-md border border-orange-500 text-orange-300 bg-black/40 shadow-[0_0_25px_#ff9100] hover:bg-orange-500 hover:text-white transition duration-300 active:scale-105 dark:animate-pulse">
+          <button className="px-6 py-3 font-semibold text-xl rounded-md border border-orange-500 text-orange-300 shadow-[0_0_25px_#ff9100] hover:bg-orange-500 hover:text-white transition duration-300 active:scale-105 dark:animate-pulse">
             Join Cohorts Live Classes
           </button>
         </div>
