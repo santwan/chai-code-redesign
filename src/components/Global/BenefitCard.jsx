@@ -43,7 +43,7 @@ const BenefitCard = ({ Icon, title, description }) => {
         <div className="bg-gray-100 dark:bg-[#1a1a1a] p-2 rounded w-fit mb-4 border border-gray-300 dark:border-gray-600">
           <Icon className="text-black dark:text-white w-6 h-6" />
         </div>
-        <h3 className="text-lg font-semibold text-yellow-500">{title}</h3>
+        <h3 className="text-lg font-semibold dark:text-yellow-500">{title}</h3>
         <p className="text-sm text-gray-800 dark:text-gray-300 mt-2">{description}</p>
       </div>
     </motion.div>
