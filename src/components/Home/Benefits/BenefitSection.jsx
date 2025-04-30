@@ -45,11 +45,13 @@ const benefits = [
 
 const CohortBenefits = () => {
   return (
-    <section className="bg-black text-white py-20 px-5">
+    <section className="bg-white text-black dark:bg-black dark:text-white py-20 px-5 transition-colors duration-300">
       <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-4xl font-bold mb-2">Key Benefits of Cohorts</h2>
-        <p className="text-gray-400 text-sm max-w-2xl mx-auto">
-          Cohorts are best way to learn because you finish the course in a timely manner
+        <h2 className="text-4xl font-bold mb-2 text-orange-500 dark:text-orange-400">
+          Key Benefits of Cohorts
+        </h2>
+        <p className="text-gray-700 dark:text-gray-400 text-sm max-w-2xl mx-auto">
+          Cohorts are the best way to learn — you complete the course on time, with a community beside you.
         </p>
       </div>
 
@@ -58,25 +60,24 @@ const CohortBenefits = () => {
           <BenefitCard key={index} {...benefit} />
         ))}
 
-        <div className="md:col-span-1 border border-gray-600 rounded-2xl flex items-center justify-center h-full bg-black p-6">
-          <div className="text-gray-400 text-sm text-center">
+        <div className="md:col-span-1 border border-gray-300 dark:border-gray-700 rounded-2xl flex items-center justify-center h-full bg-gray-50 dark:bg-black p-6">
+          <div className="text-gray-500 dark:text-gray-400 text-sm text-center">
             {/* Replace below with actual image */}
             <span>[Student collage image goes here]</span>
           </div>
         </div>
 
-        <div className="md:col-span-2 border border-gray-600 rounded-2xl p-6 bg-black">
+        <div className="md:col-span-2 border border-gray-300 dark:border-gray-700 rounded-2xl p-6 bg-gray-50 dark:bg-black transition-colors">
           <div className="flex items-center gap-2 mb-2">
-            <Users className="w-6 h-6 text-orange-400" />
-            <h3 className="text-xl font-semibold text-orange-400">
-              Alumni Network and job listings
+            <Users className="w-6 h-6 text-orange-500 dark:text-orange-400" />
+            <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400">
+              Alumni Network and Job Listings
             </h3>
           </div>
-          <p className="text-gray-300 text-sm">
-            The alumni Network that you always wished for in your college. We have a dedicated
-            platform where students get to know each other, do projects, make agencies and join
-            Hackathons. Our HR team also post regular job updates that you can apply directly
-            whenever you are ready.
+          <p className="text-gray-700 dark:text-gray-300 text-sm">
+            The alumni network you always wished for in college. We provide a dedicated platform
+            where students connect, collaborate on projects, start agencies, and join hackathons.
+            Our HR team also posts job updates you can apply to whenever you're ready.
           </p>
         </div>
       </div>
