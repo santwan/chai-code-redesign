@@ -1,4 +1,4 @@
-import LaptopFrame from '../Global/LaptopFrame';
+import LaptopFrame from '../../Global/LaptopFrame.jsx';
 
 
 const HeroSection = () => {
