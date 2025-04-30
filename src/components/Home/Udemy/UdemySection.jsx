@@ -13,12 +13,11 @@ const courses = [
 
 const UdemySection = () => {
   return (
-    <section className="bg-gradient-to-r dark:from-black via-orange-400 dark:via-orange-900/60 dark:to-black py-20 px-4">
-      <div className="text-center mb-10 text-white">
-        <h2 className="text-4xl font-bold">Udemy</h2>
-        <p className="text-gray-300 mt-2">
+    <section className="bg-gradient-to-b dark:from-black dark:via-orange-900/60 dark:to-black py-20 px-4">
+      <div className="text-center mb-10">
+        <h2 className="text-4xl font-bold md:text-5xl dark:text-orange-500">Udemy</h2>
+        <p className="dark:text-gray-100 mt-2">
           Not only in India, we are
-          <br />
           global leaders in tech education
         </p>
       </div>
