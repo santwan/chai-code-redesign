@@ -1,5 +1,5 @@
 import React from "react";
-import BenefitCard from "./BenefitCard.jsx";
+import BenefitCard from "../../Global/BenefitCard.jsx";
 import {
   GraduationCap,
   Trophy,

@@ -1,5 +1,3 @@
-// components/BenefitCard.jsx
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -29,7 +27,7 @@ const BenefitCard = ({ Icon, title, description }) => {
     >
       {/* Glowing effect */}
       <motion.div
-        className="absolute w-40 h-40 bg-pink-500 rounded-full pointer-events-none blur-2xl opacity-30"
+        className="absolute w-40 h-40 bg-lime-500 rounded-full pointer-events-none blur-2xl opacity-30"
         style={{
           top: coords.y - 80,
           left: coords.x - 80,
