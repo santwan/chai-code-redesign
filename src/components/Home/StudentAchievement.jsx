@@ -20,10 +20,11 @@ const LogoCarousel = () => {
   return (
     <section className="dark:bg-black py-16 overflow-hidden">
       <div className="text-center mb-10 px-4">
-        <h2 className="text-xl md:text-2xl font-medium leading-relaxed">
-          Our students are not only working in big tech companies <br />
-          but are now founders of funded startups and product creators
-        </h2>
+      <h2 className="text-xl md:text-2xl font-semibold leading-relaxed text-center text-gray-800 dark:text-gray-200">
+        Our learners don’t just land roles at top tech companies —<br className="hidden md:block" />
+        they build funded startups, launch products, and lead from the front.
+      </h2>
+
       </div>
 
       <div className="relative w-full overflow-hidden">
