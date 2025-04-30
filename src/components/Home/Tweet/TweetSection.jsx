@@ -68,12 +68,13 @@ const TweetSection = () => {
       animation="zoomIn"
       className="w-full pb-4 md:pt-16 flex flex-col items-center"
     >
-      <p className="mb-2 text-[14px] md:text-base tracking-wide text-center text-gray-400">
-        Love that we get from our Community
-      </p>
-      <h2 className="text-[28px] md:text-3xl font-bold text-center mb-5 md:mb-10 tracking-wider">
-        ❤️ What People Are Saying
-      </h2>
+      <p className="mb-2 text-sm md:text-base tracking-wide text-center text-orange-500 font-mono">
+  Together, we code. Together, we grow.
+</p>
+<h2 className="text-2xl md:text-3xl font-extrabold text-center mb-6 md:mb-10 tracking-tight leading-snug bg-gradient-to-r from-orange-600 via-yellow-400 to-orange-500 text-transparent bg-clip-text">
+  ❤️ Hear What Our Learners Say
+</h2>
+
 
       {isMobile ? (
         <div ref={containerRef} className="w-full overflow-hidden relative pt-4">
@@ -134,10 +135,13 @@ const TweetSection = () => {
         </div>
       )}
 
-      <div className="m-2 md:m-6 p-4">
-        <button className="bg-orange-600 text-white font-bold py-3 px-6 md:py-4 md:px-10 rounded-full transition duration-300 ease-in-out transform active:scale-95 hover:scale-105">
+      <div className="m-2 md:mt-8 p-4">
+        <a
+          href="https://courses.chaicode.com/learn"
+          className="bg-orange-600 text-white font-bold py-3 px-6 md:py-4 md:px-10 rounded-full transition duration-300 ease-in-out transform active:scale-95 hover:scale-105 inline-block text-center"
+        >
           Join Cohorts Live Classes
-        </button>
+        </a>
       </div>
     </AnimatedOnScroll>
   );
