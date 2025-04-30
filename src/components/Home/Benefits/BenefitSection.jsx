@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import BenefitCard from "../../Global/BenefitCard.jsx";
 import {
   GraduationCap,
@@ -9,6 +10,7 @@ import {
   Repeat,
   Users,
 } from "lucide-react";
+import AnimatedOnScroll from "../../AnimatedOnScroll.jsx";
 
 const benefits = [
   {
@@ -43,31 +45,66 @@ const benefits = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 100, damping: 20 },
+  },
+};
+
 const CohortBenefits = () => {
   return (
-    <section className="bg-white text-black dark:bg-black dark:text-white py-20 px-5 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto text-center mb-10">
+    <AnimatedOnScroll>
+          <motion.section
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
+      className="bg-white text-black dark:bg-black dark:text-white py-20 px-5 transition-colors duration-300"
+    >
+      <motion.div
+        variants={fadeUp}
+        className="max-w-7xl mx-auto text-center mb-10"
+      >
         <h2 className="text-4xl font-bold mb-2 text-orange-500 dark:text-orange-400">
           Key Benefits of Cohorts
         </h2>
         <p className="text-gray-700 dark:text-gray-400 text-sm max-w-2xl mx-auto">
           Cohorts are the best way to learn — you complete the course on time, with a community beside you.
         </p>
-      </div>
+      </motion.div>
 
       <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {benefits.map((benefit, index) => (
-          <BenefitCard key={index} {...benefit} />
+          <motion.div key={index} variants={fadeUp}>
+            <BenefitCard {...benefit} />
+          </motion.div>
         ))}
 
-        <div className="md:col-span-1 border border-gray-300 dark:border-gray-700 rounded-2xl flex items-center justify-center h-full bg-gray-50 dark:bg-black p-6">
+        <motion.div
+          variants={fadeUp}
+          className="md:col-span-1 border border-gray-300 dark:border-gray-700 rounded-2xl flex items-center justify-center h-full bg-gray-50 dark:bg-black p-6"
+        >
           <div className="text-gray-500 dark:text-gray-400 text-sm text-center">
-            {/* Replace below with actual image */}
             <span>[Student collage image goes here]</span>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="md:col-span-2 border border-gray-300 dark:border-gray-700 rounded-2xl p-6 bg-gray-50 dark:bg-black transition-colors">
+        <motion.div
+          variants={fadeUp}
+          className="md:col-span-2 border border-gray-300 dark:border-gray-700 rounded-2xl p-6 bg-gray-50 dark:bg-black transition-colors"
+        >
           <div className="flex items-center gap-2 mb-2">
             <Users className="w-6 h-6 text-orange-500 dark:text-orange-400" />
             <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400">
@@ -79,9 +116,10 @@ const CohortBenefits = () => {
             where students connect, collaborate on projects, start agencies, and join hackathons.
             Our HR team also posts job updates you can apply to whenever you're ready.
           </p>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
+    </AnimatedOnScroll>
   );
 };
 
