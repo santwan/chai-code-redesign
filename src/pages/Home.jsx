@@ -1,11 +1,11 @@
-import HeroSection from "../components/Home/HeroSection.jsx";
+import HeroSection from "../components/Home/Hero/HeroSection.jsx";
 import TweetSection from "../components/Home/TweetSection.jsx";
 import "./Home.css";
-import CohortsSection from "../components/Home/CohortSection.jsx";
+import CohortsSection from "../components/Home/Cohorts/CohortSection.jsx";
 import StudentAchievement from "../components/Home/StudentAchievement.jsx";
 import TestimonialsSection from "../components/Home/TestimonialSection.jsx";
 import UdemySection from "../components/Home/UdemySection.jsx";
-import CohortBenefits from "../components/Home/BenefitSection.jsx";
+import CohortBenefits from "../components/Home/Benefits/BenefitSection.jsx";
 import WhyChaiCode from "../components/Home/WhyChaiCode.jsx";
 
 const Home = () => {
@@ -19,8 +19,6 @@ const Home = () => {
       <UdemySection/>
       <CohortBenefits/>
       <WhyChaiCode/>
-
-      
       
     </>
   )
