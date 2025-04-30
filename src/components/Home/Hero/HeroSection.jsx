@@ -63,7 +63,7 @@ const HeroSection = () => {
       <motion.a
         variants={fadeUp}
         href="https://courses.chaicode.com/learn"
-        className="mt-8 inline-flex items-center justify-center px-6 py-3 border border-yellow-500 text-black dark:text-white rounded-md text-lg lg:text-2xl font-semibold hover:bg-yellow-500 hover:text-black transition duration-100 ease-in-out transform active:scale-50"
+        className="mt-8 inline-flex items-center justify-center px-6 py-3 border border-yellow-500 text-black dark:text-white rounded-md text-lg lg:text-2xl font-semibold hover:bg-yellow-500 hover:text-black transition"
       >
         Check all Live Cohorts
         <span className="ml-2 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
