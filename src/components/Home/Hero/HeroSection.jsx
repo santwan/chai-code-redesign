@@ -53,10 +53,10 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Paragraph */}
-      <motion.p variants={fadeUp} className="mt-6 text-lg font-serif sm:text-xl max-w-2xl text-gray-700 dark:text-gray-300">
+      <p className="mt-6 text-lg font-serif sm:text-xl max-w-2xl text-gray-700 dark:text-gray-300">
         Content is everywhere, we provide a learning experience that is unmatched. Bounties, peer learning,
         code reviews, virtual hostel, alumni network, doubt sessions, group projects, and more.
-      </motion.p>
+      </p>
 
       {/* CTA Button */}
       <motion.a
