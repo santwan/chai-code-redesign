@@ -35,7 +35,7 @@ const MobileCarousel = ({ tweets }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % tweets.length);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [tweets.length]);
 
