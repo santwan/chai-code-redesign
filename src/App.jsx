@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "./index.css";
 import Home from "./pages/Home";
 import Navbar from "./components/Global/Navbar";
-import ThemeToggle from "./components/Global/ThemeToggle";
 
 function App() {
   return (
