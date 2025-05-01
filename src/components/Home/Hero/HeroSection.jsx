@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import LaptopFrame from '../../Global/LaptopFrame.jsx';
 
 const containerVariants = {
   hidden: {},
@@ -21,7 +20,7 @@ const HeroSection = () => {
       initial="hidden"
       animate="show"
       variants={containerVariants}
-      className="pt-28 md:pt-32 lg:pt-50 flex flex-col items-center justify-center text-center px-4 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"
+      className="pt-28 md:pt-32 lg:pt-50 flex flex-col items-center justify-center text-center px-4 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 "
     >
       {/* Trust Badge */}
       <motion.div variants={fadeUp} className="relative flex items-center justify-center m-4 px-1 py-1">
@@ -68,11 +67,6 @@ const HeroSection = () => {
         Check all Live Cohorts
         <span className="ml-2 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
       </motion.a>
-
-      {/* Video Embedded */}
-      <motion.div variants={fadeUp}>
-        <LaptopFrame />
-      </motion.div>
     </motion.section>
   );
 };
