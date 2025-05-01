@@ -10,7 +10,6 @@ import {
   Repeat,
   Users,
 } from "lucide-react";
-import AnimatedOnScroll from "../../AnimatedOnScroll.jsx";
 
 const benefits = [
   {
