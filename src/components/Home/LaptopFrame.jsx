@@ -60,7 +60,8 @@ const LaptopFrame = () => {
             width="100%"
             height="100%"
             controls
-            light={true}
+            light="https://img.youtube.com/vi/foGklduxhM0/hqdefault.jpg" // Custom thumbnail instead of fetching
+            playing={false} // Just for clarity
           />
         </Suspense>
       </div>
