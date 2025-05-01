@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { useEffect, useRef, useState } from "react";
 
 const TweetEmbed = ({tweetId}) => {
@@ -6,10 +5,6 @@ const TweetEmbed = ({tweetId}) => {
   const [theme, setTheme] = useState(null) // Instead of Hardcoding light or dark
   const [ready, setReady] = useState(false) // ensures we wait for the theme to load 
   // this prevents rendering the Twitter embed until the correct theme is detected
-
-//   const [theme, setTheme] = useState(
-//     document.documentElement.classList.contains("dark") ? "dark" : "light"
-//   );
 
   // Load the Twitter script
   const loadTwitterWidget = () => {
@@ -76,15 +71,3 @@ const TweetEmbed = ({tweetId}) => {
 };
 
 export default TweetEmbed;
-
-
-
-
-        // style={{
-        //     height: "400px",
-        //     overflow: "hidden",
-        //     borderRadius: "16px",
-        //     border: "1px solid",
-        //     padding: "0.5rem",
-        //     boxShadow: "0 0 12px rgba(0,0,0,0.4)",
-        // }} 
