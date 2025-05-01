@@ -17,10 +17,9 @@ export default function TestimonialSection() {
 
   return (
     <section className="relative w-full px-4 py-20 text-center overflow-hidden">
-
-      {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto space-y-6">
-        {/* Badge */}
+        
+        {/* Section Label */}
         <div className="flex justify-center">
           <span className="px-3 py-1 rounded-full text-sm bg-gray-800 text-gray-200">
             Testimonials
@@ -32,8 +31,8 @@ export default function TestimonialSection() {
           Our Students' Feedback
         </h2>
 
-        {/* Subtext */}
-        <p className="text-gray-400 max-w-xl mx-auto">
+        {/* Subheading */}
+        <p className="text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
           Explore the incredible advantages of enrolling in our courses and enhancing your skills.
         </p>
 
@@ -49,9 +48,9 @@ export default function TestimonialSection() {
           <AnimatePresence initial={false} mode="wait">
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: 50, rotateY: 45, scale: 0.9 }}
+              initial={{ opacity: 0, x: 60, rotateY: 20, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, rotateY: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -50, rotateY: -45, scale: 0.9 }}
+              exit={{ opacity: 0, x: -60, rotateY: -20, scale: 0.95 }}
               transition={{ duration: 0.4 }}
               className="shadow-xl rounded-xl"
             >
@@ -62,6 +61,7 @@ export default function TestimonialSection() {
           {/* Prev Button */}
           <button
             onClick={handlePrev}
+            aria-label="Previous testimonial"
             className="absolute left-0 top-1/2 -translate-y-1/2 bg-orange-700/80 hover:bg-orange-600 p-2 rounded-full text-white shadow-lg transition"
           >
             <ChevronLeft />
@@ -70,17 +70,21 @@ export default function TestimonialSection() {
           {/* Next Button */}
           <button
             onClick={handleNext}
+            aria-label="Next testimonial"
             className="absolute right-0 top-1/2 -translate-y-1/2 bg-orange-700/80 hover:bg-orange-600 p-2 rounded-full text-white shadow-lg transition"
           >
             <ChevronRight />
           </button>
         </div>
 
-        {/* CTA Button */}
+        {/* CTA */}
         <div className="pt-10">
-          <button className="px-6 py-3 font-semibold text-xl rounded-md border border-orange-500 text-orange-300 shadow-[0_0_25px_#ff9100] hover:bg-orange-500 hover:text-white transition duration-300 active:scale-105 dark:animate-pulse">
+          <a
+            href="https://courses.chaicode.com/learn"
+            className="inline-block px-6 py-3 font-semibold text-xl rounded-md border border-orange-500 text-orange-300 shadow-[0_0_25px_#ff9100] hover:bg-orange-500 hover:text-white transition duration-300 active:scale-105 dark:animate-pulse"
+          >
             Join Cohorts Live Classes
-          </button>
+          </a>
         </div>
       </div>
     </section>
