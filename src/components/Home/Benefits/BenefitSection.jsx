@@ -65,12 +65,11 @@ const fadeUp = {
 
 const CohortBenefits = () => {
   return (
-    <AnimatedOnScroll>
-          <motion.section
+    <motion.section
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.3 }}
       className="bg-white text-black dark:bg-black dark:text-white py-20 px-5 transition-colors duration-300"
     >
       <motion.div
@@ -119,7 +118,6 @@ const CohortBenefits = () => {
         </motion.div>
       </div>
     </motion.section>
-    </AnimatedOnScroll>
   );
 };
 
