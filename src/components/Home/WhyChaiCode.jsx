@@ -1,5 +1,3 @@
-// components/KeyBenefitsSection.jsx
-
 import React from "react";
 import BenefitCard from "../Global/BenefitCard.jsx";
 import { GraduationCap, Users, Brain, Coffee, MessageSquare, Gift } from "lucide-react";
