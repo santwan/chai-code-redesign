@@ -64,7 +64,7 @@ const TweetSection = () => {
   );
 
   return (
-    <AnimatedOnScroll
+    <div
       animation="zoomIn"
       className="w-full pb-4 md:pt-16 flex flex-col items-center"
     >
@@ -143,7 +143,7 @@ const TweetSection = () => {
           Join Cohorts Live Classes
         </a>
       </div>
-    </AnimatedOnScroll>
+    </div>
   );
 };
 
