@@ -137,7 +137,8 @@ const TweetSection = () => {
       <div className="m-2 md:mt-8 p-4">
         <a
           href="https://courses.chaicode.com/learn"
-          className="bg-orange-600 text-white font-bold py-3 px-6 md:py-4 md:px-10 rounded-full transition duration-300 ease-in-out transform active:scale-95 hover:scale-105 inline-block text-center"
+          className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 px-6 md:py-4 md:px-10 rounded-full transition focus:outline-none focus:ring-4 focus:ring-orange-400"
+          aria-label="Join live cohorts on ChaiCode"
         >
           Join Cohorts Live Classes
         </a>
