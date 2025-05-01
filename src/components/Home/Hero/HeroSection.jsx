@@ -20,7 +20,7 @@ const HeroSection = () => {
       initial="hidden"
       animate="show"
       variants={containerVariants}
-      className="h-screen flex flex-col items-center justify-center text-center px-4 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"
+      className="pt-28 md:pt-32 lg:pt-50 flex flex-col items-center justify-center text-center px-4 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"
     >
       {/* Trust Badge */}
       <motion.div variants={fadeUp} className="relative flex items-center justify-center m-4 px-1 py-1">
