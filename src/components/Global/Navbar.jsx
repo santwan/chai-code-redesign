@@ -105,7 +105,10 @@ const Navbar = () => {
               scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >
-            <button onClick={() => setMenuOpen(!menuOpen)}>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            >
               {menuOpen ? (
                 <X className="text-black dark:text-white" />
               ) : (
