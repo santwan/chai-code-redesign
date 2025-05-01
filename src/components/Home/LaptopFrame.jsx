@@ -24,7 +24,7 @@ const LaptopFrame = () => {
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: false, amount: 0.4 }}
     >
       {/* Desktop View */}
       <div className="hidden md:flex flex-col items-center">
