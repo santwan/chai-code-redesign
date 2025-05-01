@@ -5,18 +5,15 @@ export default function TestimonialCard({ name, role, review, image, children })
   const cardRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Setup tilt motion values
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-50, 50], [15, -15]);
   const rotateY = useTransform(x, [-50, 50], [-15, 15]);
 
-  // Detect if on mobile (runs once on mount)
   useEffect(() => {
     setIsMobile(window.innerWidth < 768);
   }, []);
 
-  // Mouse-based tilt logic (desktop only)
   const handleMouseMove = (e) => {
     if (isMobile || !cardRef.current) return;
     const rect = cardRef.current.getBoundingClientRect();
@@ -27,9 +24,14 @@ export default function TestimonialCard({ name, role, review, image, children })
   };
 
   const resetTilt = () => {
-    x.set(0);
-    y.set(0);
+    if (!isMobile) {
+      x.set(0);
+      y.set(0);
+    }
   };
+
+  // ❗️Apply rotate styles only if NOT mobile
+  const motionStyle = !isMobile ? { rotateX, rotateY } : {};
 
   return (
     <motion.div
@@ -38,7 +40,7 @@ export default function TestimonialCard({ name, role, review, image, children })
       onMouseLeave={resetTilt}
       onTouchMove={resetTilt}
       onTouchEnd={resetTilt}
-      style={isMobile ? {} : { rotateX, rotateY }}
+      style={motionStyle}
       className="w-full h-auto rounded-xl border border-orange-400 dark:bg-black/40 backdrop-blur-md shadow-[0_0_20px_#ff9100] transition-transform duration-300 ease-out hover:scale-[1.03]"
     >
       <div className="w-full h-full flex flex-col items-center text-center p-6 gap-4">
