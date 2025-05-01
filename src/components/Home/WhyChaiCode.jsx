@@ -62,8 +62,10 @@ const WhyChaiCode = () => {
           {/* Center profile */}
           <div className="flex flex-col items-center justify-center text-center border border-gray-700 rounded-xl p-6 bg-[#101010]">
             <img
-              src="/hitesh.png"
+              src="hitesh.webp"
               alt="Hitesh Choudhary"
+              loading="lazy"
+              decoding="async"
               className="rounded-lg mb-4 w-full max-w-[280px] mx-auto"
             />
             <h3 className="text-xl font-bold">Hitesh Choudhary</h3>
