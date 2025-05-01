@@ -1,7 +1,5 @@
 import React from "react";
 import CohortCard from "./CohortCard.jsx";
-import { video } from "framer-motion/client";
-import AnimatedOnScroll from "../../AnimatedOnScroll.jsx";
 
 
 const CohortsSection = () => {
@@ -33,7 +31,6 @@ const CohortsSection = () => {
   ];
 
   return (
-    <AnimatedOnScroll>
     <section >
       <div className="w-full p-5 flex flex-col justify-center">
         <div className="text-center mb-16">
@@ -57,7 +54,6 @@ const CohortsSection = () => {
         </div>
       </div>
     </section>
-    </AnimatedOnScroll>
   );
 };
 
