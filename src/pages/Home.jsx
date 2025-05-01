@@ -8,11 +8,13 @@ import UdemySection from "../components/Home/Udemy/UdemySection.jsx";
 import CohortBenefits from "../components/Home/Benefits/BenefitSection.jsx";
 import WhyChaiCode from "../components/Home/WhyChaiCode.jsx";
 import DiscordSection from "../components/Home/DiscordSection.jsx";
+import LaptopFrame from "../components/Home/LaptopFrame.jsx";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
+      <LaptopFrame/>
       <TweetSection />
       <StudentAchievement />
       <CohortsSection />
