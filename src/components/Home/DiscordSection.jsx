@@ -76,7 +76,7 @@ const DiscordSection = () => {
               className=" flex items-center justify-center bg-gray-50 dark:bg-[#111] "
               >
               <img
-                  src="hitesh-discord.png"
+                  src="hitesh-discord.webp"
                   alt="Join on Discord"
                   className="h-auto w-auto object-contain rounded-lg"
               />
