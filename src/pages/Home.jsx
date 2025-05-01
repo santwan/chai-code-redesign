@@ -10,6 +10,7 @@ import WhyChaiCode from "../components/Home/WhyChaiCode.jsx";
 import DiscordSection from "../components/Home/DiscordSection.jsx";
 import LaptopFrame from "../components/Home/LaptopFrame.jsx";
 import FreeAPISection from "../components/Home/FreeApi/index.jsx";
+import LearnOnTheGo from "../components/Home/LearnOnTheGo/index.jsx";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <WhyChaiCode />
       <DiscordSection/>
       <FreeAPISection/>
+      <LearnOnTheGo/>
     </>
   );
 };
