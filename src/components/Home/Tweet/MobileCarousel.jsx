@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
 import TweetEmbed from "./TweetEmbed.jsx";
 
@@ -9,6 +9,7 @@ const MobileCarousel = ({ tweets }) => {
   const x = useMotionValue(0);
   const [containerWidth, setContainerWidth] = useState(0);
 
+  // Get container width on resize
   useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
       if (containerRef.current) {
@@ -21,6 +22,7 @@ const MobileCarousel = ({ tweets }) => {
     return () => resizeObserver.disconnect();
   }, []);
 
+  // Animate slide
   useEffect(() => {
     animate(x, -currentIndex * containerWidth, {
       type: "spring",
@@ -29,28 +31,13 @@ const MobileCarousel = ({ tweets }) => {
     });
   }, [currentIndex, containerWidth]);
 
-  const setIframePointerEvents = useCallback((enabled) => {
-    const iframes = tweetContainerRef.current?.querySelectorAll("iframe");
-    iframes?.forEach((iframe) => {
-      iframe.style.pointerEvents = enabled ? "auto" : "none";
-    });
-  }, []);
-
-  const handleDragEnd = useCallback(
-    (event, info) => {
-      const threshold = containerWidth / 4;
-      let newIndex = currentIndex;
-
-      if (info.offset.x < -threshold) {
-        newIndex = (currentIndex + 1) % tweets.length;
-      } else if (info.offset.x > threshold) {
-        newIndex = (currentIndex - 1 + tweets.length) % tweets.length;
-      }
-
-      setCurrentIndex(newIndex);
-    },
-    [currentIndex, containerWidth, tweets.length]
-  );
+  // Auto-slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % tweets.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [tweets.length]);
 
   return (
     <div
@@ -66,17 +53,6 @@ const MobileCarousel = ({ tweets }) => {
           x,
           width: `${tweets.length * 100}%`,
         }}
-        drag="x"
-        dragConstraints={{
-          left: -containerWidth * (tweets.length - 1),
-          right: 0,
-        }}
-        dragElastic={0.2}
-        onDragStart={() => setIframePointerEvents(false)}
-        onDragEnd={(e, info) => {
-          handleDragEnd(e, info);
-          setIframePointerEvents(true);
-        }}
         transition={{ type: "spring", stiffness: 280, damping: 25 }}
       >
         {tweets.map((id) => (
@@ -90,14 +66,17 @@ const MobileCarousel = ({ tweets }) => {
         ))}
       </motion.div>
 
+      {/* Navigation Dots */}
       <div className="flex justify-center mt-4">
         {tweets.map((_, index) => (
-          <div
+          <button
             key={index}
+            type="button"
             className={`w-3 h-3 rounded-full mx-1 cursor-pointer transition-all duration-200 ${
               index === currentIndex ? "bg-orange-500 scale-110" : "bg-gray-700"
             }`}
             onClick={() => setCurrentIndex(index)}
+            aria-label={`Go to tweet ${index + 1}`}
           />
         ))}
       </div>
