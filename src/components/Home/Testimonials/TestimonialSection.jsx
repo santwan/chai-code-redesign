@@ -43,7 +43,7 @@ export default function TestimonialSection() {
           ))}
         </div>
 
-        {/* Mobile Carousel */}
+        {/* Mobile Carousel (1 at a time) */}
         <div className="sm:hidden relative w-full max-w-sm mx-auto pt-10">
           <AnimatePresence initial={false} mode="wait">
             <motion.div
@@ -51,7 +51,7 @@ export default function TestimonialSection() {
               initial={{ opacity: 0, x: 60, rotateY: 20, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, rotateY: 0, scale: 1 }}
               exit={{ opacity: 0, x: -60, rotateY: -20, scale: 0.95 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className="shadow-xl rounded-xl"
             >
               <TestimonialCard {...testimonials[index]} />
@@ -60,6 +60,7 @@ export default function TestimonialSection() {
 
           {/* Prev Button */}
           <button
+            type="button"
             onClick={handlePrev}
             aria-label="Previous testimonial"
             className="absolute left-0 top-1/2 -translate-y-1/2 bg-orange-700/80 hover:bg-orange-600 p-2 rounded-full text-white shadow-lg transition"
@@ -69,6 +70,7 @@ export default function TestimonialSection() {
 
           {/* Next Button */}
           <button
+            type="button"
             onClick={handleNext}
             aria-label="Next testimonial"
             className="absolute right-0 top-1/2 -translate-y-1/2 bg-orange-700/80 hover:bg-orange-600 p-2 rounded-full text-white shadow-lg transition"
