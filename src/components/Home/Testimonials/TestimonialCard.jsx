@@ -11,7 +11,7 @@ export default function TestimonialCard({ name, role, review, image, children })
   const rotateY = useTransform(x, [-50, 50], [-15, 15]);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    setIsMobile(window.matchMedia('(max-width: 768px)').matches);
   }, []);
 
   const handleMouseMove = (e) => {
