@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import AnimatedOnScroll from "../../AnimatedOnScroll.jsx";
 import TweetEmbed from "./TweetEmbed.jsx";
 
 const tweets = [
