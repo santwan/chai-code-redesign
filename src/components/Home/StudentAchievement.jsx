@@ -1,4 +1,3 @@
-// components/LogoCarousel.jsx
 import { motion } from "framer-motion";
 
 // Define logo assets and custom heights
