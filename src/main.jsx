@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Global/Layout.jsx'
-
+import Error from './components/Global/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <App />
       },
+      {
+        path: '*',         // this handles all unmatched routes
+        element: <Error />
+      }
     ]
   }
 ])
