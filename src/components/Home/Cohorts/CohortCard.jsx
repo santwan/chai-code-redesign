@@ -45,11 +45,11 @@ const CohortCard = ({ title, description, price, oldPrice, cta, video, link }) =
         </div>
 
         <h3 className="text-md font-semibold mb-1 mt-5">{title}</h3>
-        <p className="text-gray-400 text-xs mb-3">{description}</p>
+        <p className="text-gray-200 text-xs mb-3">{description}</p>
 
         <div className="flex items-center space-x-2 mb-3">
           <span className="text-lg font-bold">{price}</span>
-          <span className="text-gray-500 text-sm line-through">{oldPrice}</span>
+          <span className="text-gray-200 text-sm line-through">{oldPrice}</span>
         </div>
 
         <button
