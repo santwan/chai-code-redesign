@@ -22,29 +22,30 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 
 ```
 CHAI-CODE-REDESIGN/
-├── .git/
-├── node_modules/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── Global/
-│   │   └── Home/
-│   ├── data/
-│   ├── pages/
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
+├── .git/                  # Git metadata
+├── node_modules/          # Installed dependencies
+├── public/                # Static public assets
+├── src/                   # Source code
+│   ├── assets/            # Images, icons, media
+│   ├── components/        # Reusable UI components
+│   │   ├── Global/        # Global shared components (Navbar, Footer, etc.)
+│   │   └── Home/          # Homepage-specific sections
+│   ├── data/              # JSON files for topics, logos, testimonials
+│   ├── pages/             # Page-level components (e.g., Home.jsx)
+│   ├── App.jsx            # App root component
+│   ├── index.css          # Global Tailwind styles
+│   └── main.jsx           # React DOM rendering entry
 ├── .gitattributes
 ├── .gitignore
-├── eslint.config.js
-├── index.html
+├── eslint.config.js       # Linting config
+├── index.html             # HTML entry template
 ├── LICENSE
 ├── package-lock.json
-├── package.json
+├── package.json           # Project metadata and scripts
 ├── README.md
-└── vite.config.js
+└── vite.config.js         # Vite build config
 ```
+
 
 
 
