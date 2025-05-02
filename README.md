@@ -4,22 +4,34 @@ A fully redesigned, animated, and responsive developer landing page for ChaiCode
 
 It highlights cohorts, testimonials, videos, and core offerings in a sleek, modern UI.
 
+## 🔍 Lighthouse Report
+
+> ⚡ ChaiCode is optimized for performance, accessibility, and SEO.
+
+<p align="center">
+  <img src="./public/readme-assets/lighthouse.png" alt="Lighthouse Report" width="800" />
+</p>
+
+
 ### 🧋 Hero Section
 ![Hero Section](./public/readme-assets/hero.png)
 
-### 🔧 Tech Stack
+## 🛠 Tech Stack
 
-* ⚛️ React 18 + Vite
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org)
+[![Vite](https://img.shields.io/badge/Vite-Build-F7DF1E?style=for-the-badge&logo=vite)](https://vitejs.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-Utility--First-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer--Motion-Animation-EF476F?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![React Player](https://img.shields.io/badge/React--Player-Video--Embed-4B5563?style=for-the-badge)](https://github.com/cookpete/react-player)
+[![Dswipplab](https://img.shields.io/badge/Dswipplab-Carousel-F97316?style=for-the-badge)](https://www.dswipplab.dev/)
+[![Lucide React](https://img.shields.io/badge/Lucide--React-Icon--Pack-0EA5E9?style=for-the-badge&logo=lucide)](https://lucide.dev)
 
-* 💨 Tailwind CSS (w/ @tailwindcss/vite)
 
-* 🎬 Framer Motion (for buttery smooth animations)
 
-* 🎥 React Player (for embedding videos)
 
-* 🎠 Dswipplab Carousel (mobile swipe testimonial slider)
 
-* 🧩 Lucide React Icons
+
+
 
 ### 📁 Folder Structure
 
@@ -50,7 +62,7 @@ CHAI-CODE-REDESIGN/
 ```
 
 
-
+## Features
 
 * ⚡ Lightning-fast build with Vite
 
@@ -146,10 +158,7 @@ npm run preview
 
 ---
 
-✅ You’re all set! Happy hacking 🧠
-
-
-npm run dev
+✅ You’re all set! 
 ### 🔒 Deployment
 
 ChaiCode is Vercel-ready. Just push to GitHub and connect the repo to Vercel for instant deployment.
