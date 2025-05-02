@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import logoDark from "../../assets/chaicode-black.svg";
 import logoWhite from "../../assets/chaicode-white.svg";
@@ -11,10 +12,10 @@ const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
 
   const navConfig = [
-    { label: "Cohorts", href: "#", isLive: true },
-    { label: "Udemy", href: "#", isLive: false },
-    { label: "Docs", href: "#", isLive: false },
-    { label: "Reviews", href: "#", isLive: true },
+    { label: "Cohorts", href: "/cohorts", isLive: true },
+    { label: "Udemy", href: "/udemy", isLive: false },
+    { label: "Docs", href: "/docs", isLive: false },
+    { label: "Reviews", href: "/reviews", isLive: true },
   ];
 
   useEffect(() => {
@@ -50,7 +51,7 @@ const Navbar = () => {
             }`}
           >
             <img
-              src={isDark ? logoWhite ?? fallbackLogo : logoDark ?? fallbackLogo}
+              src={isDark ? logoWhite : logoDark}
               alt="ChaiCode Logo"
               title="ChaiCode"
               className="h-8 sm:h-10 md:h-12 max-w-[160px] object-contain"
@@ -66,16 +67,16 @@ const Navbar = () => {
             }`}
           >
             {navConfig.map(({ label, href, isLive }) => (
-              <a
+              <Link
                 key={label}
-                href={href}
+                to={href}
                 className="relative flex items-center px-3 py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_15px_4px_rgba(255,115,0,0.6)]"
               >
                 <span className="relative z-10">{label}</span>
                 {isLive && (
                   <span className="ml-1 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
                 )}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -86,9 +87,12 @@ const Navbar = () => {
             }`}
           >
             <ThemeToggle />
-            <button className="text-sm lg:text-base px-5 lg:px-6 pt-2 pb-2 rounded-lg font-bold text-white bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-300 hover:from-orange-600 hover:to-yellow-400 dark:from-orange-600 dark:via-orange-500 dark:to-yellow-400 shadow-md hover:shadow-lg ring-1 ring-orange-300/50 hover:scale-105 transition-all duration-300 ease-in-out">
+            <Link
+              to="/login"
+              className="text-sm lg:text-base px-5 lg:px-6 pt-2 pb-2 rounded-lg font-bold text-white bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-300 hover:from-orange-600 hover:to-yellow-400 dark:from-orange-600 dark:via-orange-500 dark:to-yellow-400 shadow-md hover:shadow-lg ring-1 ring-orange-300/50 hover:scale-105 transition-all duration-300 ease-in-out"
+            >
               Login
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Hamburger (shown <768px) */}
@@ -121,13 +125,13 @@ const Navbar = () => {
               className="md:hidden bg-white dark:bg-black px-4 pb-4 text-black dark:text-white flex flex-col space-y-3"
             >
               <ThemeToggle />
-              <a href="#" onClick={() => setMenuOpen(false)}>
+              <Link to="/login" onClick={() => setMenuOpen(false)}>
                 Login
-              </a>
+              </Link>
               {navConfig.map(({ label, href, isLive }) => (
-                <a
+                <Link
                   key={label}
-                  href={href}
+                  to={href}
                   onClick={() => setMenuOpen(false)}
                   className="flex items-center"
                 >
@@ -135,7 +139,7 @@ const Navbar = () => {
                   {isLive && (
                     <span className="ml-2 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
                   )}
-                </a>
+                </Link>
               ))}
             </motion.div>
           )}
@@ -152,9 +156,9 @@ const Navbar = () => {
             className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 bg-white/70 dark:bg-black/70 backdrop-blur-md px-4 py-2 rounded-full shadow-lg flex flex-row items-center justify-center space-x-6 text-black dark:text-white text-sm font-medium whitespace-nowrap overflow-x-auto w-auto max-w-[90vw] sm:max-w-fit"
           >
             {navConfig.map(({ label, href, isLive }) => (
-              <a
+              <Link
                 key={label}
-                href={href}
+                to={href}
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center"
               >
@@ -162,7 +166,7 @@ const Navbar = () => {
                 {isLive && (
                   <span className="ml-2 h-2 w-2 rounded-full bg-green-400 animate-pulse shadow-md"></span>
                 )}
-              </a>
+              </Link>
             ))}
           </motion.div>
         )}
@@ -172,5 +176,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
