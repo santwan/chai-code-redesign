@@ -44,17 +44,27 @@ const Navbar = () => {
       >
         <div className="max-w-[1500px] mx-auto px-4 py-6 sm:py-8 flex justify-between items-center">
           {/* Logo */}
-          <div
-            className={`transition-opacity duration-500 ${
-              scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
-            }`}
-          >
-            <img
-              src={isDark ? logoWhite : logoDark}
-              alt="ChaiCode Logo"
-              className="h-8 sm:h-10 md:h-12 max-w-[160px] object-contain"
-            />
+          <div className="max-w-[1500px] mx-auto px-4 py-6 sm:py-8 flex justify-between items-center">
+            {/* Logo */}
+            <div
+              className={`
+                transition-opacity duration-500 
+                ${scrolled ? "opacity-0 pointer-events-none" : "opacity-100"}
+              `}
+              aria-hidden={scrolled}
+              style={{ width: 160, height: 48 }} // Ensures no layout shift
+            >
+              <img
+                src={isDark ? logoWhite ?? fallbackLogo : logoDark ?? fallbackLogo}
+                alt="ChaiCode Logo"
+                title="ChaiCode"
+                className="h-12 w-[160px] object-contain"
+                loading="eager" // Logo should load as early as possible
+                decoding="async"
+              />
+            </div>
           </div>
+
 
           {/* Center Nav (shown ≥768px) */}
           <div
