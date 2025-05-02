@@ -12,6 +12,7 @@ import LaptopFrame from "../components/Home/LaptopFrame.jsx";
 import FreeAPISection from "../components/Home/FreeApi/index.jsx";
 import LearnOnTheGo from "../components/Home/LearnOnTheGo/index.jsx";
 import TopicsCloud from "../components/Home/TopicsCloud/TopicsCloud.jsx";
+import YouTubeChannelsSection from "../components/Home/YoutubeChannelSection.jsx";
 
 const Home = () => {
   return (
@@ -28,8 +29,8 @@ const Home = () => {
       <TopicsCloud/>
       <DiscordSection/>
       <FreeAPISection/>
+      <YouTubeChannelsSection/>
       <LearnOnTheGo/>
-      
     
     </>
   );
