@@ -7,19 +7,15 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 ### 🧋 Hero Section
 ![Hero Section](./public/readme-assets/hero.png)
 
-### 🔧 Tech Stack
+## 🛠 Tech Stack
 
-* ⚛️ React 18 + Vite
+- 🟣 **React 18 + Vite** &nbsp;`⚛️`
+- 🐚 **Tailwind CSS** *(with @tailwindcss/vite)* &nbsp;`🎨`
+- 🎬 **Framer Motion** *(smooth UI animations)* &nbsp;`🎞️`
+- 📺 **React Player** *(for YouTube embedding)* &nbsp;`📹`
+- 🐎 **Dswipplab Carousel** *(mobile swipe slider)* &nbsp;`🎠`
+- 🧩 **Lucide React Icons** *(modern dev-friendly icon pack)* &nbsp;`🧷`
 
-* 💨 Tailwind CSS (w/ @tailwindcss/vite)
-
-* 🎬 Framer Motion (for buttery smooth animations)
-
-* 🎥 React Player (for embedding videos)
-
-* 🎠 Dswipplab Carousel (mobile swipe testimonial slider)
-
-* 🧩 Lucide React Icons
 
 ### 📁 Folder Structure
 
