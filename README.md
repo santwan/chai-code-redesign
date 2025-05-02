@@ -10,34 +10,20 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 ## 🛠 Tech Stack
 
 <p align="left">
-  <a href="https://reactjs.org" target="_blank">
-    <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" alt="React Badge" style="border-radius: 8px; margin-right: 10px;" />
+  <a href="https://reactjs.org" style="padding-right: 10px;">
+    <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" alt="React Badge" />
   </a>
-
-  <a href="https://vitejs.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Vite-Build-F7DF1E?style=for-the-badge&logo=vite" alt="Vite Badge" style="border-radius: 8px; margin-right: 10px;" />
+  <a href="https://vitejs.dev" style="padding-right: 10px;">
+    <img src="https://img.shields.io/badge/Vite-Build-F7DF1E?style=for-the-badge&logo=vite" alt="Vite Badge" />
   </a>
-
-  <a href="https://tailwindcss.com" target="_blank">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-Utility--First-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS Badge" style="border-radius: 8px; margin-right: 10px;" />
+  <a href="https://tailwindcss.com" style="padding-right: 10px;">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-Utility--First-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS Badge" />
   </a>
-
-  <a href="https://www.framer.com/motion/" target="_blank">
-    <img src="https://img.shields.io/badge/Framer--Motion-Animation-EF476F?style=for-the-badge&logo=framer" alt="Framer Motion Badge" style="border-radius: 8px; margin-right: 10px;" />
-  </a>
-
-  <a href="https://github.com/cookpete/react-player" target="_blank">
-    <img src="https://img.shields.io/badge/React--Player-Video--Embed-4B5563?style=for-the-badge" alt="React Player Badge" style="border-radius: 8px; margin-right: 10px;" />
-  </a>
-
-  <a href="https://www.dswipplab.dev/" target="_blank">
-    <img src="https://img.shields.io/badge/Dswipplab-Carousel-F97316?style=for-the-badge" alt="Dswipplab Badge" style="border-radius: 8px; margin-right: 10px;" />
-  </a>
-
-  <a href="https://lucide.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Lucide--React-Icon--Pack-0EA5E9?style=for-the-badge&logo=lucide" alt="Lucide React Badge" style="border-radius: 8px; margin-right: 10px;" />
+  <a href="https://www.framer.com/motion/" style="padding-right: 10px;">
+    <img src="https://img.shields.io/badge/Framer--Motion-Animation-EF476F?style=for-the-badge&logo=framer" alt="Framer Motion Badge" />
   </a>
 </p>
+
 
 
 
