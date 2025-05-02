@@ -14,7 +14,7 @@ const DiscordSection = () => {
 
         <div className="text-center p-8">
           {/* Badge */}
-          <span className="inline-block bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-xs font-mono px-3 py-1 rounded-full">
+          <span className="inline-block bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-xs md:text-base font-mono px-3 py-1 rounded-full">
             We Write Code Community
           </span>
         </div>
@@ -61,7 +61,7 @@ const DiscordSection = () => {
               href="https://discord.com/invite/WDrH3zuWFb" 
               whileTap={{ scale: 0.95 }}
               whileHover={{ scale: 1.03 }}
-              className="inline-block mt-4 bg-orange-500 font-semibold px-6 py-3 rounded-lg shadow hover:bg-orange-400 transition"
+              className="inline-block mt-4 bg-orange-500 md:text-lg font-semibold px-6 md:px-8 py-3 rounded-lg shadow hover:bg-orange-400 transition"
             >
               Join Us on Discord
             </motion.a>
