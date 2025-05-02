@@ -76,7 +76,7 @@ const HeroSection = () => {
         <span className="ml-2 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
       </motion.a>
 
-      <div className="flex flex-wrap gap-4 py-5">
+      <div className="hidden md:flex flex-wrap gap-4 py-5">
       <div className={`${baseBadgeClass} hover:shadow-orange-500/20`}>
         <Users className="text-orange-500" size={18} />
         <span className="text-sm font-medium">Peer learning</span>
