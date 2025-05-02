@@ -149,10 +149,7 @@ npm run preview
 
 ---
 
-✅ You’re all set! Happy hacking 🧠
-
-
-npm run dev
+✅ You’re all set! 
 ### 🔒 Deployment
 
 ChaiCode is Vercel-ready. Just push to GitHub and connect the repo to Vercel for instant deployment.
