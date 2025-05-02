@@ -50,9 +50,12 @@ const Navbar = () => {
             }`}
           >
             <img
-              src={isDark ? logoWhite : logoDark}
+              src={isDark ? logoWhite ?? fallbackLogo : logoDark ?? fallbackLogo}
               alt="ChaiCode Logo"
+              title="ChaiCode"
               className="h-8 sm:h-10 md:h-12 max-w-[160px] object-contain"
+              loading="eager"
+              decoding="async"
             />
           </div>
 
