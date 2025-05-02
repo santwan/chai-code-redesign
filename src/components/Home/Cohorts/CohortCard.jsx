@@ -1,9 +1,8 @@
-// components/CohortCard.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player";
 
-const CohortCard = ({ title, description, price, oldPrice, cta, video }) => {
+const CohortCard = ({ title, description, price, oldPrice, cta, video, link }) => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   const handleMove = (e) => {
@@ -18,6 +17,10 @@ const CohortCard = ({ title, description, price, oldPrice, cta, video }) => {
 
   const resetRotation = () => {
     setRotate({ x: 0, y: 0 });
+  };
+
+  const handleBuy = () => {
+    window.open(link, "_blank"); 
   };
 
   return (
@@ -35,26 +38,24 @@ const CohortCard = ({ title, description, price, oldPrice, cta, video }) => {
           rotateY: rotate.y,
           transformStyle: "preserve-3d",
         }}
-        className="rounded-2xl hover:scale-3d bg-white dark:bg-black h-auto max-w-[300px] p-4 transition-all"
+        className="rounded-2xl bg-white dark:bg-black h-auto max-w-[300px] p-4 transition-all"
       >
-        <div className="aspect-video mb-4 border border-orange-400/60 ">
-            <ReactPlayer
-              url={video}
-              width="100%"
-              height="100%"
-              controls
-            />
+        <div className="aspect-video mb-4 border border-orange-400/60">
+          <ReactPlayer url={video} width="100%" height="100%" controls />
         </div>
 
-        <h3 className=" text-md font-semibold mb-1 mt-5">{title}</h3>
+        <h3 className="text-md font-semibold mb-1 mt-5">{title}</h3>
         <p className="text-gray-400 text-xs mb-3">{description}</p>
 
         <div className="flex items-center space-x-2 mb-3">
-          <span className=" text-lg font-bold">{price}</span>
+          <span className="text-lg font-bold">{price}</span>
           <span className="text-gray-500 text-sm line-through">{oldPrice}</span>
         </div>
 
-        <button className="w-full bg-orange-400 text-black font-bold py-2 rounded hover:bg-orange-500 transition duration-300 ease-in-out transform active:scale-75">
+        <button
+          onClick={handleBuy}
+          className="w-full bg-orange-400 text-black font-bold py-2 rounded hover:bg-orange-500 transition duration-300 ease-in-out transform active:scale-95"
+        >
           {cta}
         </button>
       </motion.div>

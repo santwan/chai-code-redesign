@@ -10,6 +10,7 @@ const CohortsSection = () => {
       description: "Learn to build software for web with best and latest tech stack",
       price: "6,999 INR",
       oldPrice: "8,999 INR",
+      link: "https://courses.chaicode.com/learn/batch/about?bundleId=214297",
       cta: "Buy Now",
     },
     {
@@ -18,6 +19,7 @@ const CohortsSection = () => {
       description: "Learn to build software for web with best and latest tech stack",
       price: "4,999 INR",
       oldPrice: "9,999 INR",
+      link: "https://courses.chaicode.com/learn/batch/about?bundleId=227321",
       cta: "Buy Now",
     },
     {
@@ -26,6 +28,7 @@ const CohortsSection = () => {
       description: "Learn to build software for web with best and latest tech stack",
       price: "6,999 INR",
       oldPrice: "8,999 INR",
+      link: "https://courses.chaicode.com/learn/batch/about?bundleId=227817",
       cta: "Buy Now",
     },
   ];
