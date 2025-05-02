@@ -10,13 +10,13 @@ const UdemyFeatureCard = ({ course }) => {
     whileInView: { opacity: 1, scale: 1, y: 0 },
     whileHover: { scale: 1.02 },
     transition: { duration: 0.5, ease: "easeOut" },
-    viewport: { once: true, amount: 0.3 }
+    viewport: { once: false, amount: 0.3 }
   };
 
   const sharedClasses =  "relative border border-orange-600/40 rounded-lg p-2 transition duration-300 group";
 
   const glowBorder = (
-    <div className="absolute inset-0 rounded-lg border-2 md:border-transparent border-orange-500/40 animate-pulse md:group-hover:border-orange-500 group-hover:shadow-[0_0_20px_5px_rgba(255,115,0,0.4)] transition-all duration-100 pointer-events-none" />
+    <div className="absolute inset-0 rounded-lg border-2 md:border-transparent border-orange-500/40  animate-pulse md:group-hover:border-orange-500 group-hover:shadow-[0_0_20px_5px_rgba(255,115,0,0.4)] transition-all duration-100 pointer-events-none" />
   );
 
   const contentWrapper = (text) => (
@@ -28,7 +28,7 @@ const UdemyFeatureCard = ({ course }) => {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       className="flex flex-col md:flex-row items-center md:items-stretch gap-6 bg-white dark:bg-black border border-gray-200 dark:border-gray-700 rounded-2xl p-6 w-full max-w-6xl mx-auto shadow-md"
     >
       {/* Left: UdemyCard */}
@@ -38,7 +38,7 @@ const UdemyFeatureCard = ({ course }) => {
 
       {/* Right: Content */}
       <div className="w-full flex flex-col justify-center h-full text-center  md:py-4 lg:px-15">
-        <h2 className="text-2xl md:text-[38px] font-bold text-black dark:text-white">
+        <h2 className="text-2xl md:text-[38px] font-bold text-black  dark:text-white">
           {course.title}
         </h2>
 
@@ -47,7 +47,7 @@ const UdemyFeatureCard = ({ course }) => {
         </div>
 
         {/* Highlights */}
-        <div className="font-mono text-sm md:text-base text-gray-200 grid grid-rows-2 gap-5">
+        <div className="font-mono text-sm md:text-base dark:text-gray-200 dark:hover:text-orange-200 grid grid-rows-2 gap-5">
           <div className="grid grid-cols-2 gap-5">
             <motion.div {...glowAnimation} className={sharedClasses}>
               {glowBorder}
