@@ -9,7 +9,7 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 > ⚡ ChaiCode is optimized for performance, accessibility, and SEO.
 
 <p align="center">
-  <img src="./public/readme-assets/lighthouse.png" alt="Lighthouse Report" width="800" />
+  <img src="./public/readme-assets/report.png" alt="Lighthouse Report" width="800" />
 </p>
 
 
