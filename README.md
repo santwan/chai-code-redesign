@@ -20,7 +20,30 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 
 ### 📁 Folder Structure
 
-<pre lang="bash"> CHAI-CODE-REDESIGN/ ├── public/ ├── src/ │ ├── assets/ │ ├── components/ │ │ ├── Global/ │ │ └── Home/ │ ├── data/ │ ├── pages/ │ ├── App.jsx │ ├── index.css │ └── main.jsx ├── .gitattributes ├── .gitignore ├── index.html ├── eslint.config.js ├── LICENSE ├── package.json ├── package-lock.json ├── README.md └── vite.config.js </pre>
+CHAI-CODE-REDESIGN/
+├── .git/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Global/
+│   │   └── Home/
+│   ├── data/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitattributes
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+
 
 * ⚡ Lightning-fast build with Vite
 
