@@ -20,7 +20,7 @@ const UdemyCard = () => {
     <motion.article
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
-      className="rounded-2xl bg-black border border-gray-700 p-4 w-full max-w-sm shadow-xl text-white"
+      className="rounded-2xl dark:bg-black border border-gray-700 p-4 w-full max-w-sm shadow-xl dark:text-white"
     >
       <img
         src={course.image}
@@ -29,9 +29,9 @@ const UdemyCard = () => {
       />
 
       <h3 className="text-lg font-bold mt-4">{course.title}</h3>
-      <p className="text-sm text-gray-300 mt-2">{course.description}</p>
+      <p className="text-sm dark:text-gray-300 mt-2">{course.description}</p>
 
-      <div className="text-yellow-400 text-lg font-semibold mt-3">
+      <div className="text-green-800/90 dark:text-yellow-400 text-lg font-bold mt-3">
         {course.rating} ⭐
       </div>
 
@@ -45,14 +45,14 @@ const UdemyCard = () => {
       {/* Side-by-side Buttons */}
       <div className="mt-4 flex gap-2">
         <a
-          href="#"
+          href="https://www.udemy.com/course/web-dev-master/"
           aria-label={`Add ${course.title} to cart`}
           className="flex-1 text-center bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-xl font-semibold transition"
         >
           Add to Cart
         </a>
         <a
-          href="#"
+          href="https://www.udemy.com/course/web-dev-master/"
           aria-label={`Buy ${course.title} now`}
           className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-xl font-semibold transition"
         >
