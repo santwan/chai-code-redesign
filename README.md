@@ -1,12 +1,76 @@
-# React + Vite
+🧋 ChaiCode - Landing Page Redesign 🚀
+A fully redesigned, animated, and responsive developer landing page for ChaiCode, built using React, Tailwind CSS, and Framer Motion.
+It highlights cohorts, testimonials, videos, and core offerings in a sleek, modern UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Tech Stack
+⚛️ React 18 + Vite
 
-Currently, two official plugins are available:
+💨 Tailwind CSS (w/ @tailwindcss/vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎬 Framer Motion (for buttery smooth animations)
 
-## Expanding the ESLint configuration
+🎥 React Player (for embedding videos)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎠 Dswipplab Carousel (mobile swipe testimonial slider)
+
+🧩 Lucide React Icons
+
+📁 Folder Structure
+graphql
+Copy
+Edit
+CHAI-CODE-REDESIGN/
+├── public/                   # Static files
+├── src/
+│   ├── assets/               # Images, logos, backgrounds, etc.
+│   ├── components/
+│   │   ├── Global/           # Common reusable components (Navbar, Footer, etc.)
+│   │   └── Home/             # Components specific to homepage sections
+│   ├── data/                 # JSON data for topics, testimonials, logos, etc.
+│   ├── pages/                # Page-level components (HomePage, etc.)
+│   ├── App.jsx               # App entry and routes
+│   ├── index.css             # Global styles
+│   └── main.jsx              # React root rendering
+├── index.html
+├── vite.config.js            # Vite config
+├── package.json              # Project metadata & dependencies
+└── README.md
+✨ Key Features
+⚡ Lightning-fast build with Vite
+
+🌓 Full Light/Dark Mode support with animated toggle
+
+🧠 Topic Cloud with hover-only animation for performance
+
+📽️ Integrated video reel via ReactPlayer
+
+💬 Testimonials with swipe support on mobile
+
+🪄 Rich, modern animations using Framer Motion
+
+📱 Fully responsive & mobile-friendly
+
+♻️ Clean & modular component architecture
+
+🚀 Getting Started
+1. Clone the repo
+bash
+Copy
+Edit
+git clone https://github.com/your-username/CHAI-CODE-REDESIGN.git
+cd CHAI-CODE-REDESIGN
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Start the dev server
+bash
+Copy
+Edit
+npm run dev
+🔒 Deployment
+ChaiCode is Vercel-ready. Just push to GitHub and connect the repo to Vercel for instant deployment.
+
+🧠 Author
+Built by Santwan Pathak with chai in hand and framer-motion magic ✨
