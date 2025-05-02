@@ -28,10 +28,14 @@ const TopicsCloud = () => {
   const duplicatedTopics = [...topics, ...topics]; // For smooth looping
 
   return (
-    <section className="w-full py-20 dark:bg-black dark:text-white overflow-hidden">
+    <section className="w-full pb-20 dark:bg-black dark:text-white overflow-hidden">
+        <span className="absolute left-0 w-full h-1 
+              rounded-full animate-pulse 
+              bg-gradient-to-r dark:from-orange-950/80 via-orange-500 dark:to-orange-950/80">
+        </span>
       {/* Heading */}
       <div className="text-center mb-10 px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 font-sans">Topics Cloud</h2>
+        <h2 className="text-3xl md:text-4xl font-bold pt-15 mb-2 font-sans">Topics Cloud</h2>
         <p className="dark:text-gray-400 font-mono text-sm">
           You can find videos and courses on topics and much more
         </p>
