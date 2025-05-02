@@ -9,12 +9,15 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 
 ## 🛠 Tech Stack
 
-- 🟣 **React 18 + Vite** &nbsp;`⚛️`
-- 🐚 **Tailwind CSS** *(with @tailwindcss/vite)* &nbsp;`🎨`
-- 🎬 **Framer Motion** *(smooth UI animations)* &nbsp;`🎞️`
-- 📺 **React Player** *(for YouTube embedding)* &nbsp;`📹`
-- 🐎 **Dswipplab Carousel** *(mobile swipe slider)* &nbsp;`🎠`
-- 🧩 **Lucide React Icons** *(modern dev-friendly icon pack)* &nbsp;`🧷`
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org)
+[![Vite](https://img.shields.io/badge/Vite-Build-F7DF1E?style=for-the-badge&logo=vite)](https://vitejs.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-Utility--First-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer--Motion-Animation-EF476F?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![React Player](https://img.shields.io/badge/React--Player-Video--Embed-4B5563?style=for-the-badge)](https://github.com/cookpete/react-player)
+[![Dswipplab](https://img.shields.io/badge/Dswipplab-Carousel-F97316?style=for-the-badge)](https://www.dswipplab.dev/)
+[![Lucide React](https://img.shields.io/badge/Lucide--React-Icon--Pack-0EA5E9?style=for-the-badge&logo=lucide)](https://lucide.dev)
+
+
 
 
 ### 📁 Folder Structure
