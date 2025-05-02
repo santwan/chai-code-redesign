@@ -94,8 +94,16 @@ const CohortBenefits = () => {
           variants={fadeUp}
           className="md:col-span-1 border border-gray-300 dark:border-gray-700 rounded-2xl flex items-center justify-center h-full bg-gray-50 dark:bg-black p-6"
         >
-          <div className="text-gray-500 dark:text-gray-400 text-sm text-center">
-            <span>[Student collage image goes here]</span>
+          <div
+            className="rounded-xl overflow-hidden border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-zinc-900 p-4 flex justify-center items-center"
+            role="img"
+            aria-label="Student collage showing a network of connected student avatars"
+          >
+            <img
+              src="alumni.png" // ✅ replace with your actual path
+              alt="Student collage showing students connected as nodes"
+              className="max-w-full h-auto rounded-lg shadow-sm"
+            />
           </div>
         </motion.div>
 
