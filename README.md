@@ -9,20 +9,15 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 
 ## 🛠 Tech Stack
 
-<p align="left">
-  <a href="https://reactjs.org" style="padding-right: 10px;">
-    <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" alt="React Badge" />
-  </a>
-  <a href="https://vitejs.dev" style="padding-right: 10px;">
-    <img src="https://img.shields.io/badge/Vite-Build-F7DF1E?style=for-the-badge&logo=vite" alt="Vite Badge" />
-  </a>
-  <a href="https://tailwindcss.com" style="padding-right: 10px;">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-Utility--First-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS Badge" />
-  </a>
-  <a href="https://www.framer.com/motion/" style="padding-right: 10px;">
-    <img src="https://img.shields.io/badge/Framer--Motion-Animation-EF476F?style=for-the-badge&logo=framer" alt="Framer Motion Badge" />
-  </a>
-</p>
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org)
+[![Vite](https://img.shields.io/badge/Vite-Build-F7DF1E?style=for-the-badge&logo=vite)](https://vitejs.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-Utility--First-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer--Motion-Animation-EF476F?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![React Player](https://img.shields.io/badge/React--Player-Video--Embed-4B5563?style=for-the-badge)](https://github.com/cookpete/react-player)
+[![Dswipplab](https://img.shields.io/badge/Dswipplab-Carousel-F97316?style=for-the-badge)](https://www.dswipplab.dev/)
+[![Lucide React](https://img.shields.io/badge/Lucide--React-Icon--Pack-0EA5E9?style=for-the-badge&logo=lucide)](https://lucide.dev)
+
+
 
 
 
