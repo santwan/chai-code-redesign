@@ -43,10 +43,10 @@ const benefits = [
 
 const WhyChaiCode = () => {
   return (
-    <section className="py-20 px-4 md:px-12 bg-[#0d0d0d] text-white">
+    <section className="py-20 px-4 md:px-12 ">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-2">But Why ChaiCode ?</h2>
-        <p className="text-lg text-gray-300 mb-16">
+        <p className="text-lg dark:text-gray-300 mb-16">
           ChaiCode exists because we love tech and teaching
         </p>
 
@@ -60,7 +60,7 @@ const WhyChaiCode = () => {
           </div>
 
           {/* Center profile */}
-          <div className="flex flex-col items-center justify-center text-center border border-gray-700 rounded-xl p-6 bg-[#101010]">
+          <div className="flex flex-col items-center justify-center text-center border hover:scale-105 transition duration-300 border-gray-400 dark:border-gray-700 rounded-xl p-6">
             <img
               src="hitesh.webp"
               alt="Hitesh Choudhary"
@@ -69,12 +69,12 @@ const WhyChaiCode = () => {
               className="rounded-lg mb-4 w-full max-w-[280px] mx-auto"
             />
             <h3 className="text-xl font-bold">Hitesh Choudhary</h3>
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="dark:text-gray-300 text-sm mt-2">
               Retired from corporate and full-time YouTuber. x-Founder of LCO (acquired), x-CTO,
               Sr. Director at PW. Runs 2 YT channels (958k & 478k), stepped into 43 countries.
             </p>
             <h4 className="text-lg font-semibold mt-4">Approach</h4>
-            <p className="text-gray-300 text-sm">
+            <p className="dark:text-gray-300 text-sm">
               Project-based courses with peer learning and bounties with many activities.
             </p>
             {/* Optional: social icons or badges */}
