@@ -53,7 +53,7 @@ CHAI-CODE-REDESIGN/
 ```
 
 
-
+##Features
 
 * ⚡ Lightning-fast build with Vite
 
