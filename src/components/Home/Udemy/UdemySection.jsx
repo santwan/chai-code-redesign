@@ -7,7 +7,6 @@ const courses = [
     description:
       "Only web development course that you will need. Covers HTML, CSS, Tailwind, Node, React, MongoDB, Prisma, Deployment etc.",
     rating: 4.7,
-    image: "/images/udemy-preview-card.png", // Replace with actual image path
   },
 ];
 
