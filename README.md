@@ -67,13 +67,84 @@ CHAI-CODE-REDESIGN/
 
 ### 🚀 Getting Started
 
-1. Clone the repo
+## 📦 Installation & Local Setup
 
-git clone https://github.com/your-username/CHAI-CODE-REDESIGN.gitcd CHAI-CODE-REDESIGN
-2. Install dependencies
+Follow these steps to run the project locally on your machine:
 
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/CHAI-CODE-REDESIGN.git
+cd CHAI-CODE-REDESIGN
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+Make sure you have **Node.js (v18 or above)** installed. Then run:
+
+```bash
 npm install
-3. Start the dev server
+```
+
+> This will install all required packages listed in `package.json`
+
+---
+
+### 3️⃣ Start the Development Server
+
+```bash
+npm run dev
+```
+
+> The project will start in development mode at:
+> [http://localhost:5173](http://localhost:5173)
+
+---
+
+### 4️⃣ Build for Production (Optional)
+
+To generate an optimized production build:
+
+```bash
+npm run build
+```
+
+> This will output static files into the `/dist` folder
+
+---
+
+### 5️⃣ Preview Production Build (Optional)
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+### 🛠 Troubleshooting
+
+- If you face issues with port conflict, kill existing dev servers:
+  ```bash
+  lsof -i :5173
+  kill -9 <PID>
+  ```
+- Make sure you’re using the right Node version (v18+ recommended)
+- Delete `node_modules` and reinstall if things break:
+  ```bash
+  rm -rf node_modules
+  npm install
+  ```
+
+---
+
+✅ You’re all set! Happy hacking 🧠
+
 
 npm run dev
 ### 🔒 Deployment
