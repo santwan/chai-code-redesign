@@ -13,6 +13,7 @@ import FreeAPISection from "../components/Home/FreeApi/index.jsx";
 import LearnOnTheGo from "../components/Home/LearnOnTheGo/index.jsx";
 import TopicsCloud from "../components/Home/TopicsCloud/TopicsCloud.jsx";
 import YouTubeChannelsSection from "../components/Home/YoutubeChannelSection.jsx";
+import Footer from "../components/Global/Footer.jsx";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
       <FreeAPISection/>
       <YouTubeChannelsSection/>
       <LearnOnTheGo/>
+      <Footer/>
     
     </>
   );
