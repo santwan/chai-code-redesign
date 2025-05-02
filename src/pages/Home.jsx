@@ -33,7 +33,6 @@ const Home = () => {
       <YouTubeChannelsSection/>
       <LearnOnTheGo/>
       <Footer/>
-    
     </>
   );
 };
