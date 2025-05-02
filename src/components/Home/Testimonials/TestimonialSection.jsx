@@ -51,7 +51,7 @@ export default function TestimonialSection() {
               initial={{ opacity: 0, x: 60, rotateY: 20, scale: 0.95 }}
               animate={{ opacity: 1, x: 0, rotateY: 0, scale: 1 }}
               exit={{ opacity: 0, x: -60, rotateY: -20, scale: 0.95 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "linear" }}
               className="shadow-xl rounded-xl"
             >
               <TestimonialCard {...testimonials[index]} />
