@@ -1,5 +1,6 @@
 import React from "react";
 import CohortCard from "./CohortCard.jsx";
+import { motion } from "framer-motion";
 
 
 const CohortsSection = () => {
@@ -54,6 +55,21 @@ const CohortsSection = () => {
           {cohorts.map((cohort, i) => (
             <CohortCard key={i} {...cohort} />
           ))}
+        </div>
+
+        <div className="text-center m-2 pt-14">
+        <motion.button
+              className="bg-transparent border dark:border-orange-700/60 text-lg w-70 hover:bg-orange-600 px-4 py-2 rounded-lg font-semibold text-orange-200 hover:text-white  gap-2"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label="Explore all cohorts"
+              role="button"
+              onClick={() =>
+                (window.location.href = "https://courses.chaicode.com/learn/view-all?show=batch&type=17")
+              }
+            >
+              <code aria-hidden="true">&lt;/&gt;</code> Explore All Cohorts
+        </motion.button>
         </div>
       </div>
     </section>
