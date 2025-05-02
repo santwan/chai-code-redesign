@@ -59,7 +59,7 @@ export default function TestimonialCard({ name, role, review, image, children })
           loading="lazy"
         />
         <div>
-          <p className="font-semibold text-lg">{name}</hp>
+          <p className="font-semibold text-lg">{name}</p>
           <p className="text-sm text-gray-400">{role}</p>
         </div>
         <p className="text-gray-300 text-sm italic">“{review}”</p>
