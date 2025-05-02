@@ -43,7 +43,7 @@ export default function TestimonialSection() {
           ))}
         </div>
 
-        {/* Mobile Carousel (1 at a time) */}
+        {/* Mobile Carousel */}
         <div className="sm:hidden relative w-full max-w-sm mx-auto pt-10">
           <AnimatePresence initial={false} mode="wait">
             <motion.div
