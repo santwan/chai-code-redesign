@@ -11,6 +11,7 @@ import DiscordSection from "../components/Home/DiscordSection.jsx";
 import LaptopFrame from "../components/Home/LaptopFrame.jsx";
 import FreeAPISection from "../components/Home/FreeApi/index.jsx";
 import LearnOnTheGo from "../components/Home/LearnOnTheGo/index.jsx";
+import TopicsCloud from "../components/Home/TopicsCloud/TopicsCloud.jsx";
 
 const Home = () => {
   return (
@@ -24,9 +25,11 @@ const Home = () => {
       <UdemySection />
       <CohortBenefits />
       <WhyChaiCode />
+      <TopicsCloud/>
       <DiscordSection/>
       <FreeAPISection/>
       <LearnOnTheGo/>
+      
     
     </>
   );
