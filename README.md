@@ -4,6 +4,9 @@ A fully redesigned, animated, and responsive developer landing page for ChaiCode
 
 It highlights cohorts, testimonials, videos, and core offerings in a sleek, modern UI.
 
+### 🧋 Hero Section
+![Hero Section](./public/readme-assets/hero.png)
+
 ### 🔧 Tech Stack
 
 * ⚛️ React 18 + Vite
