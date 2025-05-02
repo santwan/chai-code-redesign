@@ -20,6 +20,7 @@ It highlights cohorts, testimonials, videos, and core offerings in a sleek, mode
 
 ### 📁 Folder Structure
 
+```
 CHAI-CODE-REDESIGN/
 ├── .git/
 ├── node_modules/
@@ -43,6 +44,8 @@ CHAI-CODE-REDESIGN/
 ├── package.json
 ├── README.md
 └── vite.config.js
+```
+
 
 
 * ⚡ Lightning-fast build with Vite
