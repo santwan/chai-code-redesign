@@ -4,6 +4,15 @@ A fully redesigned, animated, and responsive developer landing page for ChaiCode
 
 It highlights cohorts, testimonials, videos, and core offerings in a sleek, modern UI.
 
+## 🔍 Lighthouse Report
+
+> ⚡ ChaiCode is optimized for performance, accessibility, and SEO.
+
+<p align="center">
+  <img src="./public/readme-assets/lighthouse.png" alt="Lighthouse Report" width="800" />
+</p>
+
+
 ### 🧋 Hero Section
 ![Hero Section](./public/readme-assets/hero.png)
 
