@@ -78,7 +78,7 @@ CHAI-CODE-REDESIGN/
 
 * 📱 Fully responsive & mobile-friendly
 
-* ♻️ Clean & modular component architecture
+* ♻️ Clean & modular component architecture and folder 
 
 ### 🚀 Getting Started
 
